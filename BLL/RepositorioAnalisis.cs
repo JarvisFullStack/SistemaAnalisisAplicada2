@@ -15,8 +15,11 @@ namespace BLL
             {                
                 foreach(var item in entity.AnalisisDetalle)
                 {
-                    _context.Entry(item).State = System.Data.Entity.EntityState.Added;
+                    _context.Entry(item).State = System.Data.Entity.EntityState.Added;    
                 }
+
+                decimal monto = entity.AnalisisDetalle.Sum(x=>x.Monto);
+                entity.Monto = entity.Balance = monto;
                 if (_context.Set<Analisis>().Add(entity) != null)
                 {
                     _context.SaveChanges();
@@ -73,7 +76,7 @@ namespace BLL
                 {
                     //Muy importante indicar que pasara con la entidad del detalle
                     var estado = item.Id_Analisis_Detalle > 0 ? System.Data.Entity.EntityState.Modified : System.Data.Entity.EntityState.Added;
-                    contextoaAnalisis.Entry(item).State = estado;
+                    contextoaAnalisis.Entry<AnalisisDetalle>(item).State = estado;
                 }
                 contextoaAnalisis.SaveChanges();
                 entity.Monto = entity.AnalisisDetalle.Sum(x => x.Monto);

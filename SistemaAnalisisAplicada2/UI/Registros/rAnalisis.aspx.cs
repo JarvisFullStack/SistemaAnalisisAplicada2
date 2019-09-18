@@ -97,7 +97,7 @@ namespace SistemaAnalisisAplicada2.UI.Registros
             analisis = (Analisis)ViewState["Analisis"];
             analisis.Id_Analisis = Soporte.ToInt(IdTextBox.Text);
             analisis.Id_Paciente = Soporte.ToInt(PacienteDropDownList.SelectedValue);
-            analisis.AnalisisDetalle = (List<AnalisisDetalle>)DetalleGridView.DataSource;
+            //analisis.AnalisisDetalle = (List<AnalisisDetalle>)DetalleGridView.DataSource;
             return analisis;
         }
 

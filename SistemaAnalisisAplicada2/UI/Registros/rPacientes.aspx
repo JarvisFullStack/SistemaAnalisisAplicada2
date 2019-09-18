@@ -9,10 +9,6 @@
 		<ContentTemplate>
 			<div class="panel panel-primary">
 				<div class="panel-heading">Registro de Pacientes</div>
-
-
-
-
 				<div class="panel-body">
 					<div class="form-horizontal col-md-12" role="form">
 						<div class="form-group">
