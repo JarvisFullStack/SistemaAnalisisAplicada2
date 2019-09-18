@@ -3,6 +3,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace Entidades
 {
+    [Serializable]
     public class TipoAnalisis
     {
         [Key]

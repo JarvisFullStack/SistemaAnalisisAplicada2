@@ -4,3 +4,9 @@ C:\Users\PC-Programacion\Desktop\aplicada\SistemaAnalisisAplicada2\Entidades\bin
 C:\Users\PC-Programacion\Desktop\aplicada\SistemaAnalisisAplicada2\Entidades\bin\Debug\Entidades.pdb
 C:\Users\PC-Programacion\Desktop\aplicada\SistemaAnalisisAplicada2\Entidades\obj\Debug\Entidades.dll
 C:\Users\PC-Programacion\Desktop\aplicada\SistemaAnalisisAplicada2\Entidades\obj\Debug\Entidades.pdb
+C:\Users\darkarmy\Desktop\Aplicada 2\SistemaAnalisisAplicada2\Entidades\bin\Debug\Entidades.dll
+C:\Users\darkarmy\Desktop\Aplicada 2\SistemaAnalisisAplicada2\Entidades\bin\Debug\Entidades.pdb
+C:\Users\darkarmy\Desktop\Aplicada 2\SistemaAnalisisAplicada2\Entidades\obj\Debug\Entidades.csprojAssemblyReference.cache
+C:\Users\darkarmy\Desktop\Aplicada 2\SistemaAnalisisAplicada2\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
+C:\Users\darkarmy\Desktop\Aplicada 2\SistemaAnalisisAplicada2\Entidades\obj\Debug\Entidades.dll
+C:\Users\darkarmy\Desktop\Aplicada 2\SistemaAnalisisAplicada2\Entidades\obj\Debug\Entidades.pdb

@@ -8,6 +8,29 @@ namespace BLL
     public class RepositorioAnalisis : RepositorioBase<Analisis>
     {
 
+        public override bool Guardar(Analisis entity)
+        {
+            bool ok = false;
+            try
+            {                
+                foreach(var item in entity.AnalisisDetalle)
+                {
+                    _context.Entry(item).State = System.Data.Entity.EntityState.Added;
+                }
+                if (_context.Set<Analisis>().Add(entity) != null)
+                {
+                    _context.SaveChanges();
+                    ok = true;
+                }
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+
+            return ok;
+        }
+
         public override Analisis Buscar(int id)
         {
             Analisis entity;
@@ -40,8 +63,7 @@ namespace BLL
                 {
                     if (!entity.AnalisisDetalle.Contains(itemAnterior))
                     {
-                        itemAnterior.Analisis = null;
-                        itemAnterior.Paciente = null;
+                        itemAnterior.Analisis = null;                        
                         itemAnterior.TipoAnalisis = null;
                         contextoaAnalisis.Entry(itemAnterior).State = System.Data.Entity.EntityState.Deleted;
                     }

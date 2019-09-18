@@ -12,3 +12,17 @@ C:\Users\PC-Programacion\Desktop\aplicada\SistemaAnalisisAplicada2\DAL\bin\Debug
 C:\Users\PC-Programacion\Desktop\aplicada\SistemaAnalisisAplicada2\DAL\obj\Debug\DAL.csproj.CopyComplete
 C:\Users\PC-Programacion\Desktop\aplicada\SistemaAnalisisAplicada2\DAL\obj\Debug\DAL.dll
 C:\Users\PC-Programacion\Desktop\aplicada\SistemaAnalisisAplicada2\DAL\obj\Debug\DAL.pdb
+C:\Users\darkarmy\Desktop\Aplicada 2\SistemaAnalisisAplicada2\DAL\bin\Debug\DAL.dll.config
+C:\Users\darkarmy\Desktop\Aplicada 2\SistemaAnalisisAplicada2\DAL\bin\Debug\DAL.dll
+C:\Users\darkarmy\Desktop\Aplicada 2\SistemaAnalisisAplicada2\DAL\bin\Debug\DAL.pdb
+C:\Users\darkarmy\Desktop\Aplicada 2\SistemaAnalisisAplicada2\DAL\bin\Debug\Entidades.dll
+C:\Users\darkarmy\Desktop\Aplicada 2\SistemaAnalisisAplicada2\DAL\bin\Debug\EntityFramework.dll
+C:\Users\darkarmy\Desktop\Aplicada 2\SistemaAnalisisAplicada2\DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\darkarmy\Desktop\Aplicada 2\SistemaAnalisisAplicada2\DAL\bin\Debug\Entidades.pdb
+C:\Users\darkarmy\Desktop\Aplicada 2\SistemaAnalisisAplicada2\DAL\bin\Debug\EntityFramework.xml
+C:\Users\darkarmy\Desktop\Aplicada 2\SistemaAnalisisAplicada2\DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\darkarmy\Desktop\Aplicada 2\SistemaAnalisisAplicada2\DAL\obj\Debug\DAL.csprojAssemblyReference.cache
+C:\Users\darkarmy\Desktop\Aplicada 2\SistemaAnalisisAplicada2\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\darkarmy\Desktop\Aplicada 2\SistemaAnalisisAplicada2\DAL\obj\Debug\DAL.csproj.CopyComplete
+C:\Users\darkarmy\Desktop\Aplicada 2\SistemaAnalisisAplicada2\DAL\obj\Debug\DAL.dll
+C:\Users\darkarmy\Desktop\Aplicada 2\SistemaAnalisisAplicada2\DAL\obj\Debug\DAL.pdb

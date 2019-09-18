@@ -15,21 +15,21 @@ namespace SistemaAnalisisAplicada2.UI.Registros
         {
             if (!Page.IsPostBack)
             {
-
-                //si llego in id
-                int idPaciente = Soporte.ToInt(Request.QueryString["idPaciente"]);
+                ViewState["Analisis"] = new Analisis();
+                //si llego in id                
                 int idAnalisis = Soporte.ToInt(Request.QueryString["idAnalisis"]);
-                if (idAnalisis > 0 && idPaciente > 0)
+                if (idAnalisis > 0)
                 {
                     BLL.RepositorioAnalisis repositorio = new BLL.RepositorioAnalisis();
                     var analisis = repositorio.Buscar(idAnalisis);
-
+                    ViewState["Analisis"] = new Analisis();
                     if (analisis == null)
                     {
                         MostrarMensaje("error", "Registro no encontrado");
                     }
                     else
                     {
+                        MostrarMensaje("success", "Busqueda Completa");
                         LlenaCampos(analisis);
                     }
                 }
@@ -56,8 +56,9 @@ namespace SistemaAnalisisAplicada2.UI.Registros
 
         private void LlenaGrid()
         {
+            
             DetalleGridView.DataSource = null;
-            DetalleGridView.DataSource = this.listaAnalisisDetalle;
+            DetalleGridView.DataSource = ((Analisis)ViewState["Analisis"]).AnalisisDetalle;
             DetalleGridView.DataBind();
         }
 
@@ -80,6 +81,8 @@ namespace SistemaAnalisisAplicada2.UI.Registros
             PacienteDropDownList.SelectedIndex = listaPaciente.IndexOf(listaPaciente.Find(x => x.Id_Paciente == analisis.Id_Paciente));
             PacienteDropDownList.Enabled = false;
             TipoAnalisisDropDownList.SelectedIndex = 0;
+            ViewState["Analisis"] = analisis;
+            LlenaGrid();
 
         }
 
@@ -91,35 +94,29 @@ namespace SistemaAnalisisAplicada2.UI.Registros
         private Analisis LlenaClase()
         {
             Analisis analisis = new Analisis();
+            analisis = (Analisis)ViewState["Analisis"];
             analisis.Id_Analisis = Soporte.ToInt(IdTextBox.Text);
             analisis.Id_Paciente = Soporte.ToInt(PacienteDropDownList.SelectedValue);
-            analisis.AnalisisDetalle = this.listaAnalisisDetalle;
+            analisis.AnalisisDetalle = (List<AnalisisDetalle>)DetalleGridView.DataSource;
             return analisis;
         }
 
         protected void GuadarButton_Click(object sender, EventArgs e)
         {
-            BLL.RepositorioAnalisis repositorio = new BLL.RepositorioAnalisis();
-            Analisis analisis = new Analisis();
-            analisis = LlenaClase();
             bool paso = false;
-            if (analisis.Id_Analisis <= 0) //Creando
-            {
+            RepositorioAnalisis repositorio = new RepositorioAnalisis();
+            Analisis analisis = LlenaClase();
+            if (Soporte.ToInt(IdTextBox.Text) == 0)
                 paso = repositorio.Guardar(analisis);
-                if (paso)
-                {
-                    Limpiar();
-                }
-            }
+
             else
-            {
                 paso = repositorio.Modificar(analisis);
-            }
+
             if (paso)
             {
-                MostrarMensaje("success", "Transaccion Existosa");
-            }
-            else
+                MostrarMensaje("success", "Transaccion Exitosa");
+                Limpiar();
+            } else
             {
                 MostrarMensaje("error", "Transaccion Fallida");
             }
@@ -133,6 +130,7 @@ namespace SistemaAnalisisAplicada2.UI.Registros
             this.listaAnalisisDetalle = new List<AnalisisDetalle>();
             this.ErrorLabel.Text = string.Empty;
             this.PacienteDropDownList.Enabled = true;
+            ViewState["Analisis"] = new Analisis();
             this.LlenaGrid();
         }
 
@@ -160,7 +158,17 @@ namespace SistemaAnalisisAplicada2.UI.Registros
 
         protected void BotonAgregarDetalle_Click(object sender, EventArgs e)
         {
-
+            Analisis analisis = new Analisis();
+            analisis = (Analisis)ViewState["Analisis"];                 
+            int idAnalisis = Soporte.ToInt(IdTextBox.Text);
+            int idPaciente = Soporte.ToInt(PacienteDropDownList.SelectedValue);
+            int idTipo = Soporte.ToInt(TipoAnalisisDropDownList.SelectedValue);
+            TipoAnalisis tipoAnalisis = new RepositorioBase<TipoAnalisis>().Buscar(idTipo);
+            AnalisisDetalle detalle = new AnalisisDetalle(0, idAnalisis, idPaciente, idTipo, DateTime.Now, tipoAnalisis.Precio, tipoAnalisis.Precio);
+            detalle.TipoAnalisis = tipoAnalisis;
+            analisis.AnalisisDetalle.Add(detalle);
+            ViewState["Analisis"] = analisis;            
+            LlenaGrid();
         }
     }
 

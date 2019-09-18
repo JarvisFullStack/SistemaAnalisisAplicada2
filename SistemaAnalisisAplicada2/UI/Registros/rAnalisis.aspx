@@ -9,10 +9,6 @@
 		<ContentTemplate>
 			<div class="panel panel-primary">
 				<div class="panel-heading">Registro de Analisis</div>
-
-
-
-
 				<div class="panel-body">
 					<div class="form-horizontal col-md-12" role="form">
 						<div class="form-group">
@@ -54,24 +50,24 @@
 					<div class="row">
 
 
-						<asp:GridView ID="DetalleGridView" AllowPaging="true" PageSize="5" OnPageIndexChanging="DetalleGridView_PageIndexChanging" CssClass="table table-bordered col-md-offset-4 col-sm-offset-4" runat="server" CellPadding="4" ForeColor="#333333" GridLines="None" Width="244px" AutoGenerateColumns="true">
+						<asp:GridView ID="DetalleGridView"  AllowPaging="true" PageSize="5" OnPageIndexChanging="DetalleGridView_PageIndexChanging" CssClass="table table-bordered col-md-offset-4 col-sm-offset-4" runat="server" CellPadding="4" ForeColor="#333333" GridLines="None" Width="244px" AutoGenerateColumns="false">
 							<Columns>
-								<asp:CommandField ButtonType="Link" ShowEditButton="true" ShowDeleteButton="true" />
+								<asp:CommandField ButtonType="Link" ShowDeleteButton="true" />
 								<asp:TemplateField HeaderText="Código">
 									<ItemTemplate>
-										<asp:Label ID="LabelIdTipoAnalisis" Text='<%# Bind("Id_Tipo_Analisis") %>' runat="server" />
+										<asp:Label ID="LabelIdTipoAnalisis" Text='<%# Bind("Id_Analisis_Detalle") %>' runat="server" />
 									</ItemTemplate>
 								</asp:TemplateField>
 
 								<asp:TemplateField HeaderText="Nombre">
 									<ItemTemplate>
-										<asp:Label ID="LabelTipoAnalisisNombre" Text='<%# Bind("Tipo_Analisis.Nombre") %>' runat="server" />
+										<asp:Label ID="LabelTipoAnalisisNombre" Text='<%# Bind("TipoAnalisis.Nombre") %>' runat="server" />
 									</ItemTemplate>
 								</asp:TemplateField>
 
 								<asp:TemplateField HeaderText="Precio">
 									<ItemTemplate>
-										<asp:Label ID="LabelTipoAnalisisPrecio" Text='<%# Bind("Tipo_Analisis.Precio") %>' runat="server" />
+										<asp:Label ID="LabelTipoAnalisisPrecio" Text='<%# Bind("Monto") %>' runat="server" />
 									</ItemTemplate>
 								</asp:TemplateField>
 							</Columns>

@@ -15,3 +15,20 @@ C:\Users\PC-Programacion\Desktop\aplicada\SistemaAnalisisAplicada2\BLL\obj\Debug
 C:\Users\PC-Programacion\Desktop\aplicada\SistemaAnalisisAplicada2\BLL\obj\Debug\BLL.csproj.CopyComplete
 C:\Users\PC-Programacion\Desktop\aplicada\SistemaAnalisisAplicada2\BLL\obj\Debug\BLL.dll
 C:\Users\PC-Programacion\Desktop\aplicada\SistemaAnalisisAplicada2\BLL\obj\Debug\BLL.pdb
+C:\Users\darkarmy\Desktop\Aplicada 2\SistemaAnalisisAplicada2\BLL\bin\Debug\BLL.dll.config
+C:\Users\darkarmy\Desktop\Aplicada 2\SistemaAnalisisAplicada2\BLL\bin\Debug\BLL.dll
+C:\Users\darkarmy\Desktop\Aplicada 2\SistemaAnalisisAplicada2\BLL\bin\Debug\BLL.pdb
+C:\Users\darkarmy\Desktop\Aplicada 2\SistemaAnalisisAplicada2\BLL\bin\Debug\DAL.dll
+C:\Users\darkarmy\Desktop\Aplicada 2\SistemaAnalisisAplicada2\BLL\bin\Debug\Entidades.dll
+C:\Users\darkarmy\Desktop\Aplicada 2\SistemaAnalisisAplicada2\BLL\bin\Debug\EntityFramework.dll
+C:\Users\darkarmy\Desktop\Aplicada 2\SistemaAnalisisAplicada2\BLL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\darkarmy\Desktop\Aplicada 2\SistemaAnalisisAplicada2\BLL\bin\Debug\DAL.pdb
+C:\Users\darkarmy\Desktop\Aplicada 2\SistemaAnalisisAplicada2\BLL\bin\Debug\DAL.dll.config
+C:\Users\darkarmy\Desktop\Aplicada 2\SistemaAnalisisAplicada2\BLL\bin\Debug\Entidades.pdb
+C:\Users\darkarmy\Desktop\Aplicada 2\SistemaAnalisisAplicada2\BLL\bin\Debug\EntityFramework.xml
+C:\Users\darkarmy\Desktop\Aplicada 2\SistemaAnalisisAplicada2\BLL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\darkarmy\Desktop\Aplicada 2\SistemaAnalisisAplicada2\BLL\obj\Debug\BLL.csprojAssemblyReference.cache
+C:\Users\darkarmy\Desktop\Aplicada 2\SistemaAnalisisAplicada2\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+C:\Users\darkarmy\Desktop\Aplicada 2\SistemaAnalisisAplicada2\BLL\obj\Debug\BLL.csproj.CopyComplete
+C:\Users\darkarmy\Desktop\Aplicada 2\SistemaAnalisisAplicada2\BLL\obj\Debug\BLL.dll
+C:\Users\darkarmy\Desktop\Aplicada 2\SistemaAnalisisAplicada2\BLL\obj\Debug\BLL.pdb

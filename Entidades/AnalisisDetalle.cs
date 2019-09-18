@@ -4,6 +4,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Entidades
 {
+    [Serializable]
     public class AnalisisDetalle
     {
         [Key]
@@ -16,8 +17,6 @@ namespace Entidades
         public decimal Balance { get; set; }
         [ForeignKey("Id_Analisis")]
         public virtual Analisis Analisis { get; set; }
-        [ForeignKey("Id_Paciente")]
-        public virtual Paciente Paciente { get; set; }
         [ForeignKey("Id_Tipo")]
         public virtual TipoAnalisis TipoAnalisis { get; set; }
 
