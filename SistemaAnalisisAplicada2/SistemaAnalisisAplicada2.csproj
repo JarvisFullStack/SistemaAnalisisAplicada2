@@ -74,15 +74,72 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />
+    <Content Include="Index.aspx" />
+    <Content Include="UI\Consultas\cPacientes.aspx" />
+    <Content Include="UI\Consultas\cTiposAnalisis.aspx" />
+    <Content Include="UI\Registros\rAnalisis.aspx" />
+    <Content Include="UI\Registros\rPacientes.aspx" />
+    <Content Include="UI\Registros\rTiposAnalisis.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MainLayout.Master.cs">
+      <DependentUpon>MainLayout.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MainLayout.Master.designer.cs">
+      <DependentUpon>MainLayout.Master</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UI\Consultas\cPacientes.aspx.cs">
+      <DependentUpon>cPacientes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\Consultas\cPacientes.aspx.designer.cs">
+      <DependentUpon>cPacientes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Consultas\cTiposAnalisis.aspx.cs">
+      <DependentUpon>cTiposAnalisis.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\Consultas\cTiposAnalisis.aspx.designer.cs">
+      <DependentUpon>cTiposAnalisis.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Registros\rAnalisis.aspx.cs">
+      <DependentUpon>rAnalisis.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\Registros\rAnalisis.aspx.designer.cs">
+      <DependentUpon>rAnalisis.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Registros\rPacientes.aspx.cs">
+      <DependentUpon>rPacientes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\Registros\rPacientes.aspx.designer.cs">
+      <DependentUpon>rPacientes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Registros\rTiposAnalisis.aspx.cs">
+      <DependentUpon>rTiposAnalisis.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\Registros\rTiposAnalisis.aspx.designer.cs">
+      <DependentUpon>rTiposAnalisis.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Utilidades\Soporte.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="MainLayout.Master" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -94,6 +151,16 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BLL\BLL.csproj">
+      <Project>{8fcddede-2027-423f-bd34-d5ca50ed9a77}</Project>
+      <Name>BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Entidades\Entidades.csproj">
+      <Project>{6d63aa45-26cb-4a6b-89e5-cf8e8f6810f5}</Project>
+      <Name>Entidades</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

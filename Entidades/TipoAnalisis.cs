@@ -1,9 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Entidades
 {
@@ -15,9 +11,10 @@ namespace Entidades
         public decimal Precio { get; set; }
         public DateTime Fecha_Creacion { get; set; }
 
-        public TipoAnalisis()            
+        public TipoAnalisis()
         {
             this.Precio = 0;
+            this.Fecha_Creacion = DateTime.Now;
         }
     }
 }
