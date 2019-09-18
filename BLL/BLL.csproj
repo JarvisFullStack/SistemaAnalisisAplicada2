@@ -49,6 +49,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="IRepository.cs" />
+    <Compile Include="RepositorioAnalisis.cs" />
     <Compile Include="RepositorioBase.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -60,6 +61,10 @@
     <ProjectReference Include="..\DAL\DAL.csproj">
       <Project>{85E217A0-8C46-4878-945C-479B5A6054D7}</Project>
       <Name>DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Entidades\Entidades.csproj">
+      <Project>{6D63AA45-26CB-4A6B-89E5-CF8E8F6810F5}</Project>
+      <Name>Entidades</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

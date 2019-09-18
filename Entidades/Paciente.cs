@@ -15,5 +15,10 @@ namespace Entidades
             Fecha_Creacion = DateTime.Now;
         }
 
+        public override bool Equals(object obj)
+        {
+            return this.Id_Paciente == ((Paciente)obj).Id_Paciente;
+        }
+
     }
 }

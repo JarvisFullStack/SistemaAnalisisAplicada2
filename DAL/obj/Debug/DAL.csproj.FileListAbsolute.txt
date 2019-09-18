@@ -1,3 +1,5 @@
+C:\Users\PC-Programacion\Desktop\aplicada\SistemaAnalisisAplicada2\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\PC-Programacion\Desktop\aplicada\SistemaAnalisisAplicada2\DAL\obj\Debug\DAL.csprojAssemblyReference.cache
 C:\Users\PC-Programacion\Desktop\aplicada\SistemaAnalisisAplicada2\DAL\bin\Debug\DAL.dll.config
 C:\Users\PC-Programacion\Desktop\aplicada\SistemaAnalisisAplicada2\DAL\bin\Debug\DAL.dll
 C:\Users\PC-Programacion\Desktop\aplicada\SistemaAnalisisAplicada2\DAL\bin\Debug\DAL.pdb
@@ -7,8 +9,6 @@ C:\Users\PC-Programacion\Desktop\aplicada\SistemaAnalisisAplicada2\DAL\bin\Debug
 C:\Users\PC-Programacion\Desktop\aplicada\SistemaAnalisisAplicada2\DAL\bin\Debug\Entidades.pdb
 C:\Users\PC-Programacion\Desktop\aplicada\SistemaAnalisisAplicada2\DAL\bin\Debug\EntityFramework.xml
 C:\Users\PC-Programacion\Desktop\aplicada\SistemaAnalisisAplicada2\DAL\bin\Debug\EntityFramework.SqlServer.xml
-C:\Users\PC-Programacion\Desktop\aplicada\SistemaAnalisisAplicada2\DAL\obj\Debug\DAL.csprojAssemblyReference.cache
-C:\Users\PC-Programacion\Desktop\aplicada\SistemaAnalisisAplicada2\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
 C:\Users\PC-Programacion\Desktop\aplicada\SistemaAnalisisAplicada2\DAL\obj\Debug\DAL.csproj.CopyComplete
 C:\Users\PC-Programacion\Desktop\aplicada\SistemaAnalisisAplicada2\DAL\obj\Debug\DAL.dll
 C:\Users\PC-Programacion\Desktop\aplicada\SistemaAnalisisAplicada2\DAL\obj\Debug\DAL.pdb

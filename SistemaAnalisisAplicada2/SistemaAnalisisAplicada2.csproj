@@ -75,6 +75,7 @@
   <ItemGroup>
     <Content Include="Global.asax" />
     <Content Include="Index.aspx" />
+    <Content Include="UI\Consultas\cAnalisis.aspx" />
     <Content Include="UI\Consultas\cPacientes.aspx" />
     <Content Include="UI\Consultas\cTiposAnalisis.aspx" />
     <Content Include="UI\Registros\rAnalisis.aspx" />
@@ -101,6 +102,13 @@
       <DependentUpon>MainLayout.Master</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UI\Consultas\cAnalisis.aspx.cs">
+      <DependentUpon>cAnalisis.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\Consultas\cAnalisis.aspx.designer.cs">
+      <DependentUpon>cAnalisis.aspx</DependentUpon>
+    </Compile>
     <Compile Include="UI\Consultas\cPacientes.aspx.cs">
       <DependentUpon>cPacientes.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

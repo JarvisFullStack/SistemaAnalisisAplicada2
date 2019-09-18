@@ -1,4 +1,3 @@
-C:\Users\PC-Programacion\Desktop\aplicada\SistemaAnalisisAplicada2\SistemaAnalisisAplicada2\obj\Debug\SistemaAnalisisAplicada2.csprojAssemblyReference.cache
 C:\Users\PC-Programacion\Desktop\aplicada\SistemaAnalisisAplicada2\SistemaAnalisisAplicada2\obj\Debug\SistemaAnalisisAplicada2.csproj.CoreCompileInputs.cache
 C:\Users\PC-Programacion\Desktop\aplicada\SistemaAnalisisAplicada2\SistemaAnalisisAplicada2\bin\SistemaAnalisisAplicada2.dll.config
 C:\Users\PC-Programacion\Desktop\aplicada\SistemaAnalisisAplicada2\SistemaAnalisisAplicada2\bin\SistemaAnalisisAplicada2.dll
@@ -63,6 +62,7 @@ C:\Users\PC-Programacion\Desktop\aplicada\SistemaAnalisisAplicada2\SistemaAnalis
 C:\Users\PC-Programacion\Desktop\aplicada\SistemaAnalisisAplicada2\SistemaAnalisisAplicada2\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 C:\Users\PC-Programacion\Desktop\aplicada\SistemaAnalisisAplicada2\SistemaAnalisisAplicada2\bin\DAL.pdb
 C:\Users\PC-Programacion\Desktop\aplicada\SistemaAnalisisAplicada2\SistemaAnalisisAplicada2\bin\DAL.dll.config
+C:\Users\PC-Programacion\Desktop\aplicada\SistemaAnalisisAplicada2\SistemaAnalisisAplicada2\obj\Debug\SistemaAnalisisAplicada2.csprojAssemblyReference.cache
 C:\Users\PC-Programacion\Desktop\aplicada\SistemaAnalisisAplicada2\SistemaAnalisisAplicada2\obj\Debug\SistemaAnalisisAplicada2.csproj.CopyComplete
 C:\Users\PC-Programacion\Desktop\aplicada\SistemaAnalisisAplicada2\SistemaAnalisisAplicada2\obj\Debug\SistemaAnalisisAplicada2.dll
 C:\Users\PC-Programacion\Desktop\aplicada\SistemaAnalisisAplicada2\SistemaAnalisisAplicada2\obj\Debug\SistemaAnalisisAplicada2.pdb
