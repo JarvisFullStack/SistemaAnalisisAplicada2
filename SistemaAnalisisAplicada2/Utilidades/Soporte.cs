@@ -1,5 +1,8 @@
-﻿using System;
+﻿using BLL;
+using System;
+using System.Linq.Expressions;
 using System.Web.UI;
+using System.Web.UI.WebControls;
 
 namespace SistemaAnalisisAplicada2.Utilidades
 {
@@ -12,6 +15,16 @@ namespace SistemaAnalisisAplicada2.Utilidades
 
             return retorno;
         }
+
+        public static void LlenarCombo<T>(DropDownList dropDown, BLL.IRepository<T> repositorio, Expression<Func<T, bool>> expression, string dataValueField, string dataTextField)  where T : class
+        {
+            dropDown.Items.Clear();
+            dropDown.DataSource = repositorio.GetList(expression);
+            dropDown.DataTextField = dataTextField;
+            dropDown.DataValueField = dataValueField;
+            dropDown.DataBind();
+        }
+       
 
         public static decimal ToDecimal(string valor)
         {

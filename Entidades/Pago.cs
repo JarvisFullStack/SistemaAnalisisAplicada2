@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -13,6 +14,8 @@ namespace Entidades
         [Key]
         public int Id_Pago { get; set; }
         public int Id_Analisis { get; set; }
+        [ForeignKey("Id_Analisis")]
+        public virtual Analisis Analisis { get; set; }
 
         public virtual List<PagoDetalle> PagoDetalle { get; set; }
 
@@ -23,7 +26,7 @@ namespace Entidades
 
         public void AgregarDetalle(int Id_Analisis_Detalle, decimal Monto)
         {
-            this.PagoDetalle.Add(new Entidades.PagoDetalle(this.Id_Pago, this.Id_Analisis, Id_Analisis_Detalle, Monto, DateTime.Now));            
+            this.PagoDetalle.Add(new Entidades.PagoDetalle(this.Id_Pago, this.Id_Analisis, Monto, DateTime.Now));            
         }
     }
 }
